@@ -152,7 +152,7 @@ nav {
 .plan li {
   list-style: none;
   height: 50px;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 50px;
   background-color: #e8e9ea;
   color: #333;
@@ -264,14 +264,59 @@ nav {
 }
 /*footer*/
 
-footer  {
-    text-align: center;
-    font-weight: bold;
-    background-color: #202b34;
+footer {
+  text-align: center;
+  font-weight: bold;
+  background-color: #202b34;
 }
-footer P{
-    padding-top: 1em;
-    padding-bottom: 1em;
-    color: #fff;
+footer P {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #fff;
+}
+/*media qeries*/
 
+@media screen and (max-width: 1100px) {
+  .plans-container {
+    width: 95%;
+  }
+  .plan {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .plans-container,
+  .specialties-container ul {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .navbar-items li {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .plan {
+    width: 100%;
+    max-width: 100%;
+  }
+  .searchdomain-container {
+    padding: 3em 2em;
+  }
+  .container .searchdomain-container input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+  }
 }
